@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab Assignment 1 | Mohammad Mohid</title>
+</head>
+<body>
+    <div class="static-nav">
+        <div class="links flex">
+            <a href="#" class="questions flex">
+                <img src="./images/icons/question-circle.svg" alt="">
+                <p>Need help?</p>
+            </a>
+            <a href="#" class="phone flex">
+                <img src="images/icons/phone.svg" alt="">
+                <p>1234-5678</p>
+            </a>
+            <a href="#" class="email flex">
+                <img src="images/icons/email.svg" alt="">
+                <p>support@portIT.com</p>
+            </a>
+        </div>
+        <div class="auth flex">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+    <nav class="sticky-nav">
+        <h2 class="logo">portIT</h2>
+        <div class="links flex">
+            <a href="#">Home</a>
+            <a href="#">Templates</a>
+            <a href="#">Community</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="cta">
+            <a class="cta-button" href="#">Create Yours</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <h1 class="hero-title"><span style="color:#ffdd80;font-size: 3.5rem;">"</span>Craft Stunning Portfolios in Minutes<span style="color:#ffdd80;font-size: 3.5rem;">"</span></h1>
+        <p class="hero-desc">Choose from beautiful templates, or build your own. Import your projects from GitHub or Behance, and showcase your work effortlessly.</p>
+        <a href="#" class="cta-button-hero">Start Building</a>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <img src="images/icons/template.svg" alt="Templates">
+            <h2>Explore Templates</h2>
+            <p>Choose from a wide variety of templates designed to make your portfolio stand out.</p>
+        </div>
+        <div class="card">
+            <img src="images/icons/import.svg" alt="GitHub">
+            <h2>Auto-Import Projects</h2>
+            <p>Link your GitHub or Behance, and we’ll automatically pull in your projects and details.</p>
+        </div>
+        <div class="card">
+            <img src="images/icons/edit.svg" alt="Customization">
+            <h2>Customize Your Way</h2>
+            <p>Prefer to do things manually? Easily input project details and fine-tune every aspect of your portfolio.</p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.sticky-nav');
+            if (window.scrollY > 0) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        });
+    </script>
+    
+</body>
+</html>

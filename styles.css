@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(80, 37, 209);
+}
+
+img {
+    width: 25px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.static-nav {
+    display: flex;
+    padding: 12px 60px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.sticky-nav {
+    display: flex;
+    position: sticky;
+    padding: 12px 60px;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.sticky-nav .links a {
+    color: white;
+}
+
+.sticky-nav .links a:hover {
+    color: rgb(179, 179, 179);
+    font-weight: 600;
+}
+
+.sticky-nav.sticky {
+    background-color: white;
+}
+
+.sticky-nav.sticky {
+    color: black
+}
+
+.sticky-nav.sticky .links a {
+    color: black;
+}
+
+.sticky-nav.sticky .links a:hover {
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: #ddc06f;
+    color: black;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 16px;
+}
+
+.cta-button:hover {
+    background-color: #ffdd80;
+}
+
+.cta-button-hero {
+    text-decoration: none;
+    background-color: #ddc06f;
+    color: black;
+    font-weight: 800;
+    font-size: 1.15rem;
+    padding: 12px 20px;
+    border-radius: 16px;
+}
+
+.cta-button-hero:hover {
+    background-color: #ffdd80;
+}
+
+.hero {
+    height: 85vh;
+    background-image: url('./images/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-desc {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -20px;
+    gap: 2rem;
+    padding: 0 60px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.1s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(2px);
+}
+
+.card img {
+    width: 50px;
+}
